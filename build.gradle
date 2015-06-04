@@ -1,0 +1,17 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'org.slf4j:slf4j-api:1.7.7'
+    compile 'org.springframework:spring-beans:4.1.6.RELEASE'
+    compile 'org.springframework:spring-context:4.1.6.RELEASE'
+    compile 'org.aspectj:aspectjrt:1.8.5'
+    compile 'com.google.guava:guava:18.0'
+
+    testCompile "junit:junit:4.11"
+}
