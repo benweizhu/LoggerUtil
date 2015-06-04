@@ -9,4 +9,5 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
 @Retention(value = RUNTIME)
 @Target(value = {METHOD})
 public @interface Log {
+	public String format() default "";
 }
