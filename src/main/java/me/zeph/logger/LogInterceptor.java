@@ -15,9 +15,9 @@ import java.lang.reflect.Method;
 
 @Aspect
 @Component
-public class ApplicationLogInterceptor {
+public class LogInterceptor {
 
-	private static final Logger LOGGER = LoggerFactory.getLogger(ApplicationLogInterceptor.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(LogInterceptor.class);
 	private static final String SEPARATOR = ", ";
 
 	@Before(value = "@annotation(me.zeph.logger.Log)")
